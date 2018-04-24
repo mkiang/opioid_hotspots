@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+data_private/
+data_restricted
+joinpoint_analyses/
+results_explorer/cached_images/
