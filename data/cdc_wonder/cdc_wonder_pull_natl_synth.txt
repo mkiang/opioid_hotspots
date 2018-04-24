@@ -1,0 +1,170 @@
+"Notes"	"Year"	"Year Code"	"Hispanic Origin"	"Hispanic Origin Code"	"Race"	"Race Code"	Deaths	Population	Crude Rate	Age Adjusted Rate	Age Adjusted Rate Lower 95% Confidence Interval	Age Adjusted Rate Upper 95% Confidence Interval	Age Adjusted Rate Standard Error
+	"1999"	"1999"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	37	34722236	0.106559958	0.110039703	0.075745829	0.154536457	0.019125554
+	"1999"	"1999"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	628	197154118	0.318532530	0.304571323	0.280626243	0.328516403	0.012216878
+"Total"	"1999"	"1999"	"Not Hispanic or Latino"	"2186-2"			665	231876354	0.286790778	0.292395635	0.270102343	0.314688926	0.011374129
+"Total"	"1999"	"1999"					665	231876354	0.286790778	0.292395635	0.270102343	0.314688926	0.011374129
+	"2000"	"2000"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	40	35091809	0.113986714	0.131021408	0.092718609	0.179837364	0.021369644
+	"2000"	"2000"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	703	197324684	0.356265616	0.328101200	0.303726001	0.352476399	0.012436326
+"Total"	"2000"	"2000"	"Not Hispanic or Latino"	"2186-2"			743	232416493	0.319684714	0.303114934	0.281208289	0.325021580	0.011176860
+"Total"	"2000"	"2000"					743	232416493	0.319684714	0.303114934	0.281208289	0.325021580	0.011176860
+	"2001"	"2001"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	50	35638389	0.140298149	0.165631414	0.122535776	0.218973011	0.023580560
+	"2001"	"2001"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	856	197842671	0.432667026	0.415086952	0.387146466	0.443027438	0.014255350
+"Total"	"2001"	"2001"	"Not Hispanic or Latino"	"2186-2"			906	233481060	0.388040041	0.385268092	0.360096159	0.410440025	0.012842823
+"Total"	"2001"	"2001"					906	233481060	0.388040041	0.385268092	0.360096159	0.410440025	0.012842823
+	"2002"	"2002"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	62	36049904	0.171983814	0.170528758	0.130132201	0.219504617	0.021936716
+	"2002"	"2002"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	1155	198101982	0.583033036	0.574112917	0.540846636	0.607379199	0.016972593
+"Total"	"2002"	"2002"	"Not Hispanic or Latino"	"2186-2"			1217	234151886	0.519748109	0.517327112	0.488060164	0.546594060	0.014932116
+"Total"	"2002"	"2002"					1217	234151886	0.519748109	0.517327112	0.488060164	0.546594060	0.014932116
+	"2003"	"2003"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	51	36422205	0.140024471	0.148246367	0.108925500	0.197136536	0.021556595
+	"2003"	"2003"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	1274	198289486	0.642494983	0.646064340	0.610251069	0.681877612	0.018272077
+"Total"	"2003"	"2003"	"Not Hispanic or Latino"	"2186-2"			1325	234711691	0.564522370	0.550353690	0.520569138	0.580138243	0.015196200
+"Total"	"2003"	"2003"					1325	234711691	0.564522370	0.550353690	0.520569138	0.580138243	0.015196200
+	"2004"	"2004"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	62	36848991	0.168254268	0.182167275	0.139343392	0.234001152	0.023300575
+	"2004"	"2004"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	1501	198619903	0.755714799	0.732918804	0.695507789	0.770329818	0.019087252
+"Total"	"2004"	"2004"	"Not Hispanic or Latino"	"2186-2"			1563	235468894	0.663781943	0.661024649	0.627989263	0.694060035	0.016854789
+"Total"	"2004"	"2004"					1563	235468894	0.663781943	0.661024649	0.627989263	0.694060035	0.016854789
+	"2005"	"2005"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	85	37270736	0.228060964	0.227007498	0.180003325	0.282531262	0.025399140
+	"2005"	"2005"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	1553	198880984	0.780869025	0.759685276	0.721311639	0.798058912	0.019578386
+"Total"	"2005"	"2005"	"Not Hispanic or Latino"	"2186-2"			1638	236151720	0.693621880	0.700121575	0.665869965	0.734373185	0.017475311
+"Total"	"2005"	"2005"					1638	236151720	0.693621880	0.700121575	0.665869965	0.734373185	0.017475311
+	"2006"	"2006"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	355	37719495	0.941157881	0.979611965	0.877292499	1.081931431	0.052203809
+	"2006"	"2006"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2172	199200396	1.090359278	1.089070077	1.042688082	1.135452072	0.023664283
+"Total"	"2006"	"2006"	"Not Hispanic or Latino"	"2186-2"			2527	236919891	1.066605252	1.047709446	1.006459976	1.088958916	0.021045648
+"Total"	"2006"	"2006"					2527	236919891	1.066605252	1.047709446	1.006459976	1.088958916	0.021045648
+	"2007"	"2007"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	91	38184699	0.238315352	0.249174420	0.200106993	0.306631550	0.026435909
+	"2007"	"2007"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2008	199492421	1.006554530	0.990698075	0.946549142	1.034847009	0.022524966
+"Total"	"2007"	"2007"	"Not Hispanic or Latino"	"2186-2"			2099	237677120	0.883130863	0.881503953	0.843115828	0.919892077	0.019585778
+"Total"	"2007"	"2007"					2099	237677120	0.883130863	0.881503953	0.843115828	0.919892077	0.019585778
+	"2008"	"2008"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	88	38651733	0.227674138	0.231341259	0.185042933	0.285704142	0.024879092
+	"2008"	"2008"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2080	199783797	1.041125472	1.021508000	0.976601120	1.066414881	0.022911674
+"Total"	"2008"	"2008"	"Not Hispanic or Latino"	"2186-2"			2168	238435530	0.909260461	0.909917069	0.870920013	0.948914125	0.019896457
+"Total"	"2008"	"2008"					2168	238435530	0.909260461	0.909917069	0.870920013	0.948914125	0.019896457
+	"2009"	"2009"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	132	39104815	0.337554340	0.336181428	0.277536823	0.394826033	0.029920717
+	"2009"	"2009"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2595	199993079	1.297544902	1.244837236	1.195820340	1.293854132	0.025008620
+"Total"	"2009"	"2009"	"Not Hispanic or Latino"	"2186-2"			2727	239097894	1.140537022	1.114549151	1.072009177	1.157089126	0.021704069
+"Total"	"2009"	"2009"					2727	239097894	1.140537022	1.114549151	1.072009177	1.157089126	0.021704069
+	"2010"	"2010"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	142	39437133	0.360066742	0.350175548	0.291823373	0.408527724	0.029771518
+	"2010"	"2010"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2707	200127372	1.352638559	1.330175398	1.278776798	1.381573998	0.026223776
+"Total"	"2010"	"2010"	"Not Hispanic or Latino"	"2186-2"			2849	239564505	1.189241286	1.166591332	1.122681544	1.210501120	0.022402953
+"Total"	"2010"	"2010"					2849	239564505	1.189241286	1.166591332	1.122681544	1.210501120	0.022402953
+	"2011"	"2011"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	132	39944896	0.330455235	0.344725151	0.284981358	0.404468945	0.030481527
+	"2011"	"2011"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2343	200423243	1.169026089	1.155300574	1.107089036	1.203512112	0.024597724
+"Total"	"2011"	"2011"	"Not Hispanic or Latino"	"2186-2"			2475	240368139	1.029670575	1.013925825	0.972907243	1.054944406	0.020927847
+"Total"	"2011"	"2011"					2475	240368139	1.029670575	1.013925825	0.972907243	1.054944406	0.020927847
+	"2012"	"2012"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	124	40391388	0.306996135	0.302787919	0.248653319	0.356922520	0.027619694
+	"2012"	"2012"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2319	200698847	1.155462542	1.127865555	1.080481985	1.175249126	0.024175291
+"Total"	"2012"	"2012"	"Not Hispanic or Latino"	"2186-2"			2443	241090235	1.013313542	0.988852572	0.948617176	1.029087968	0.020528263
+"Total"	"2012"	"2012"					2443	241090235	1.013313542	0.988852572	0.948617176	1.029087968	0.020528263
+	"2013"	"2013"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	202	40802086	0.495072727	0.477932903	0.410612530	0.545253277	0.034347129
+	"2013"	"2013"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2673	200918513	1.330390097	1.319019460	1.267380066	1.370658854	0.026346630
+"Total"	"2013"	"2013"	"Not Hispanic or Latino"	"2186-2"			2875	241720599	1.189389738	1.180006477	1.135659104	1.224353849	0.022626211
+"Total"	"2013"	"2013"					2875	241720599	1.189389738	1.180006477	1.135659104	1.224353849	0.022626211
+	"2014"	"2014"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	449	41316519	1.086732404	1.091048603	0.988428990	1.193668215	0.052356945
+	"2014"	"2014"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	4685	201048793	2.330280093	2.418740549	2.347574419	2.489906678	0.036309250
+"Total"	"2014"	"2014"	"Not Hispanic or Latino"	"2186-2"			5134	242365312	2.118289931	2.160318115	2.099824643	2.220811587	0.030864016
+"Total"	"2014"	"2014"					5134	242365312	2.118289931	2.160318115	2.099824643	2.220811587	0.030864016
+	"2015"	"2015"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	883	41777483	2.113578743	2.110867799	1.969185674	2.252549924	0.072286798
+	"2015"	"2015"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	7995	201242281	3.972823186	4.223671497	4.128740205	4.318602790	0.048434333
+"Total"	"2015"	"2015"	"Not Hispanic or Latino"	"2186-2"			8878	243019764	3.653200815	3.828606582	3.747076639	3.910136525	0.041596910
+"Total"	"2015"	"2015"					8878	243019764	3.653200815	3.828606582	3.747076639	3.910136525	0.041596910
+	"2016"	"2016"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	2391	42141669	5.673719282	5.639597358	5.409841020	5.869353696	0.117222621
+	"2016"	"2016"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	15143	201324760	7.521677910	8.164316845	8.031259037	8.297374652	0.067886636
+"Total"	"2016"	"2016"	"Not Hispanic or Latino"	"2186-2"			17534	243466429	7.201814259	7.610984875	7.495636932	7.726332818	0.058850991
+"Total"	"2016"	"2016"					17534	243466429	7.201814259	7.610984875	7.495636932	7.726332818	0.058850991
+"Total"							59766	4281983516	1.395755023	1.381603435	1.370390796	1.392816074	0.005720734
+"---"
+"Dataset: Multiple Cause of Death, 1999-2016"
+"Query Parameters:"
+"Title:"
+"2013 Urbanization: All"
+"Autopsy: All"
+"Gender: All"
+"Hispanic Origin: Not Hispanic or Latino"
+"MCD - ICD-10 Codes: T40.4 (Other synthetic narcotics)"
+"Place of Death: All"
+"Race: Black or African American, White"
+"States: All"
+"Ten-Year Age Groups: All"
+"UCD - ICD-10 Codes: X40 (Accidental poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics), X41"
+"(Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not"
+"elsewhere classified), X42 (Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not"
+"elsewhere classified), X43 (Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system), X44"
+"(Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X60 (Intentional"
+"self-poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics), X61 (Intentional self-poisoning by and"
+"exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified), X62"
+"(Intentional self-poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified), X63"
+"(Intentional self-poisoning by and exposure to other drugs acting on the autonomic nervous system), X64 (Intentional"
+"self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X85 (Assault by drugs,"
+"medicaments and biological substances), Y10 (Poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics,"
+"undetermined intent), Y11 (Poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic"
+"drugs, not elsewhere classified, undetermined intent), Y12 (Poisoning by and exposure to narcotics and psychodysleptics"
+"[hallucinogens], not elsewhere classified, undetermined intent), Y13 (Poisoning by and exposure to other drugs acting on the"
+"autonomic nervous system, undetermined intent), Y14 (Poisoning by and exposure to other and unspecified drugs, medicaments and"
+"biological substances, undetermined intent)"
+"Weekday: All"
+"Year/Month: All"
+"Group By: Year, Hispanic Origin, Race"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd.html for more information."
+"---"
+"Query Date: Apr 14, 2018 2:28:57 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Multiple Cause of Death"
+"1999-2016 on CDC WONDER Online Database, released December, 2017. Data are from the Multiple Cause of Death Files, 1999-2016, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/mcd-icd10.html on Apr 14, 2018 2:28:57 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/mcd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/mcd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/mcd.html#California-Reporting-Anomalies."
+"5. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2000 Standard Population."
+"6. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Age-Adjusted Rates."
+"7. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"8. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Not Stated."
+"9. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Racial Differences."
+"10. The method used to calculate 95% confidence intervals is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Confidence-Intervals."
+"11. The method used to calculate standard errors is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Standard-Errors."
+"12. The population figures for year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016"
+"postcensal series released by NCHS on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for"
+"year 2014 are bridged-race estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS"
+"on June 30, 2015. The population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2013 postcensal series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013."
+"Population figures for 2011 are bridged-race estimates of the July 1 resident population, from the county-level postcensal"
+"Vintage 2011 series released by NCHS on July 18, 2012. Population figures for 2010 are April 1 Census counts. The population"
+"figures for years 2001 - 2009, are bridged-race estimates of the July 1 resident population, from the revised intercensal"
+"county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population figures for 2000 are April 1 Census counts."
+"Population figures for 1999 are from the 1990-1999 intercensal series of July 1 estimates. Population figures for Infant Age"
+"Groups are the number of live births. <br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from"
+"previously published reports, due to use of the population estimates which were available at the time of release."
+"13. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd.html#Age Group."
+"14. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#ICD-10 Changes."
