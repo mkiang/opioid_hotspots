@@ -181,7 +181,16 @@ In the next step, we create a public version of the results file is created by i
 
 ### Part 4: Create the joinpoint plots (and other plots)
 
-\[Coming soon.\]
+-   **Paper Figure 1**: `./code/04a_plot_figure1_national_opioid_rates.R`
+    -   Inputs: `./data/national_age_standardized_rates_long.csv`
+    -   Outputs:
+        -   `./plots/fig_overall_opioid_mortality.pdf`
+        -   `./plots/fig_overall_opioid_mortality.png`
+-   **Paper Figure 2**: `./code/04b_plot_figure2_rates_by_race_and_type.R`
+    -   Inputs: `./data/cdc_wonder/cdc_wonder_pull_natl_*.txt` (4 files)
+    -   Outputs:
+        -   `./plots/fig_race_variation.pdf`
+        -   `./plots/fig_race_variation.png`
 
 Session Information
 ===================
