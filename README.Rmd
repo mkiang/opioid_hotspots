@@ -9,7 +9,7 @@ output: github_document
 
 ```{r echo=FALSE}
 ## A key plot
-# knitr::include_graphics("./plots/00_all_states_opioid.png")
+knitr::include_graphics("./plots/fig_jp_results_geofacet_opioid.png")
 ```
 
 # Introduction

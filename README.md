@@ -5,6 +5,8 @@
 
 \[See the [interactive results explorer here](http://shiny.demog.berkeley.edu/mkiang/opioid_hotspots/results_explorer/).\]
 
+<img src="./plots/fig_jp_results_geofacet_opioid.png" width="3600" />
+
 Introduction
 ============
 
