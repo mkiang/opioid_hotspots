@@ -7,3 +7,5 @@ data_private/
 data_restricted
 joinpoint_analyses/
 results_explorer/cached_images/
+rmds/paa_slides_cache/beamer/
+rmds/paa_slides_files/

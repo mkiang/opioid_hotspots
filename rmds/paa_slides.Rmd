@@ -1,0 +1,198 @@
+---
+title: "Geographic Variation in Opioid Mortality by Race/Ethnicity, 1999--2016"
+subtitle: "Identifying epidemic hotspots"
+author: 
+  - "Mathew Kiang\\inst{1}"
+  - "Monica Alexander\\inst{2}"
+  - "Zhe Zhang\\inst{3}"
+  - "Jarvis Chen\\inst{1}"
+institute:
+  - "\\inst{1}Deptartment of Social and Behavioral Sciences \\newline  Harvard TH Chan School of Public Health"
+  - "\\inst{2}Department of Demography \\newline University of California, Berkeley"
+  - "\\inst{3}Heinz College \\newline Carnegie Mellon University"
+# date: "`r format(Sys.time(), '%d %B %Y')`"
+date: "PAA 2018: Denver, CO"
+# fontsize: 12pt
+classoption: 
+  - compress
+  # - "aspectratio=169"
+output: 
+  beamer_presentation:
+    theme: "CambridgeUS"
+    color: "dolphin"
+    fonttheme: "structurebold"
+    incremental: true
+    keep_tex: true
+    includes:
+      in_header: paa_header.tex
+    dev: cairo_pdf
+    fig_width: 6
+    fig_height: 4
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(error = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+library(tidyverse)
+library(here)
+library(geofacet)
+library(statebins)
+library(viridis)
+library(gridExtra)
+```
+
+
+## Introduction
+
+- Opioid-related mortality is a massive public health issue
+    - Over 42,000 opioid-related deaths in 2016
+    - More than deaths due to motor vehicle accidents
+    - More than deaths due to firearms
+    
+- More alarming than the magnitude is the trajectory:
+    - Current rate of increase similar to peak of HIV epidemic
+    - "Triple-wave" epidemic[^1]
+        - Not one, but multiple, overlapping epidemics
+        - Variation by type of opioid
+
+
+[^1]: For examples, see: Unick *et al.* 2013; Compton *et al.* 2016; Ciccarone 2017
+
+## Increased over 2,500% since 1980
+
+```{r, cache=TRUE}
+f1 <- readRDS(here("plots", "grobs", "presentation_fig1.RDS"))
+print(f1)
+```
+
+## Wave 1: Prescription Opioids, 1990--2010
+
+```{r, cache=TRUE}
+f2 <- readRDS(here("plots", "grobs", "presentation_fig2.RDS"))
+print(f2)
+```
+
+## Wave 2: Heroin, 2010--current
+
+```{r, cache=TRUE}
+f3 <- readRDS(here("plots", "grobs", "presentation_fig3.RDS"))
+print(f3)
+```
+
+## Wave 3: Synthetic Opioids, 2013--current
+
+```{r, cache=TRUE}
+f4 <- readRDS(here("plots", "grobs", "presentation_fig4.RDS"))
+print(f4)
+```
+
+## Substantial variation: By race/ethnicity
+```{r, cache=TRUE}
+# f5 <- readRDS(here("plots", "grobs", "presentation_fig5.RDS"))
+# print(f5)
+```
+
+## Substantial variation: By geography
+```{r, cache=TRUE}
+# f6 <- readRDS(here("plots", "grobs", "presentation_fig6.RDS"))
+# print(f6)
+```
+
+## Aims of the paper
+
+1. Systematically describe the opioid epidemic from 1999 to 2016 by state, race/ethnicity, and opioid type.
+1. Systematically describe the *current* epidemic.
+1. Identify "epidemic hotspots" --- areas with both high mortality rates and rapid increases in mortality.
+
+## Methods
+
+- Multiple cause of death data from NCHS
+    - 1999--2015, restricted-access
+    - 2016, public-access (pending request to restricted file)
+- Age-standardized rates by state, race/ethnicity, and opioid type
+    - Underlying cause: X40--X44, X60--X64, X85, Y10--Y14
+    - Contributory cause: T40.0--T40.4 and T40.6
+- Joinpoint regression (stratified by race/ethnicity, state, opioid type)
+    - Segmented weighted least squares regression
+    - Grid-search to find optimal joinpoint locations
+    - Permutation test to find optimal joinpoint model (0-3 joins)
+- Defined statistical significance as $P < 0.01$
+
+## Example Joinpoint Results: Maryland
+```{r, cache=TRUE}
+# f7 <- readRDS('./plots/grobs/fig_example_jp_MD.RDS')
+# print(f7)
+```
+
+## Example Joinpoint Results: All opioids
+```{r, cache=TRUE, fig.height=6, fig.width=10}
+# f8 <- readRDS('./plots/grobs/fig_jp_results_geofacet_opioid.RDS')
+# f8 <- f8 + theme(legend.position = 'none')
+# print(f8)
+```
+
+## Current Mortality
+```{r, cache=TRUE, fig.height=6.5, fig.width=11}
+# f9 <- readRDS('./plots/grobs/current_rates_map.RDS')
+# print(f9)
+```
+
+## Current Trajectory
+```{r, cache=TRUE, fig.height=6.5, fig.width=11}
+# f10 <- readRDS('./plots/grobs/current_trajectory_map.RDS')
+# print(f10)
+```
+
+
+## Epidemic Hotspots
+```{r, cache=TRUE, fig.height=7.5, fig.width=11, fig.align='center'}
+# p_legend <- readRDS('./plots/grobs/hotspots_legend.RDS')
+# p1 <- readRDS('./plots/grobs/hotspots_map.RDS')
+# 
+# grid.arrange(p1, p_legend,  heights = c(4, 1.5), nrow=2)
+```
+
+## Results
+
+- There were no decreases in opioid mortality, by type, for either race/ethnicity, anywhere
+- Where there were increases, it is just as bad (or worse) for the black population
+- Increases are driven by heroin and synthetic opioids
+    - Heroin APC: 30-34\% for both populations
+    - Synthetic opioid APC: 70\% for whites, 150\% for blacks
+    - Synthetic opioids are doubling in 12 states for whites and 18 for blacks
+- Strong geographical clustering in heroin and synthetic opioid mortality
+    - Little evidence this is due to differences in opioid use
+    - Source of heroin/synthetic opioids is important
+
+## Conclusions
+
+- Interventions must be local and tailored to region, race/ethnicity, and opioid type
+- Supply-side interventions need to be balanced with harm reduction interventions
+    - Syringe exchange programs
+    - Medication assisted treatment
+    - Increased naloxone access
+    - Drug testing on-site and point-of-site
+    - Supervised consumption sites
+- Surveillance of illicit markets needs to be dramatically improved
+    - Better measurement of potency of drugs
+    - Types of drugs
+    - Cost and availability
+    
+## Thank you
+\Large
+\begin{center}
+\textbf{Code and interactive results explorer:} \\ \texttt{https://tiny.cc/paa2018} \newline \newline
+
+ mathewkiang.com | \faGithub: mkiang | \faTwitter: @mathewkiang 
+
+\end{center}
+
+
+## Epidemic Hotspots
+```{r, cache=TRUE, fig.height=5, fig.width=8}
+# f14 <- readRDS('./plots/grobs/hotspots_scatter_final.RDS')
+# print(f14)
+```
+

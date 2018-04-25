@@ -92,9 +92,5 @@ p1 <- ggplot() +
                                            color = "grey75"), 
                legend.position = "none")
 
-## Save
-ggsave(sprintf('./%s/fig_state_variation.pdf', plot_folder), 
-       p1, width = 6, height = 3.5, scale = 1.5, device = cairo_pdf)
-
-ggsave(sprintf('./%s/fig_state_variation.png', plot_folder), 
-       p1, width = 6, height = 3.5, scale = 1.5, dpi = 300)
+## Save the grob for presentation
+saveRDS(p1, sprintf('./%s/grobs/presentation_fig6.RDS', plot_folder))
