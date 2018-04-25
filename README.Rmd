@@ -47,6 +47,7 @@ All analyses are conducted using [`R`](https://cran.r-project.org/), and the NCI
 ## `R` Packages
 To run this code, you'll need the following `R` packages from CRAN:
 
+For data manipulation: 
 - `tidyverse`
 - `doParallel`
 - `foreach`
@@ -55,7 +56,12 @@ To run this code, you'll need the following `R` packages from CRAN:
 - `rmarkdown`
 - `yaml`
 - `digest`
-- `ggrepel` (for plotting)
+
+For plotting: 
+- `ggrepel` 
+- `gridExtra` 
+- `cowplot` 
+- `viridis` 
 
 In addition, you'll need these packages which should be installed via Github and not CRAN:
 
@@ -162,7 +168,48 @@ In the next step, we create a public version of the results file is created by i
     - Outputs: 
         - `./plots/fig_race_variation.pdf`
         - `./plots/fig_race_variation.png`
+- **Paper Figure 3**: `./code/04c_plot_figure3_rates_by_state_and_type.R`
+    - Inputs: `./data/cdc_wonder/cdc_wonder_pull_*.txt` (8 files)
+    - Outputs: 
+        - `./plots/fig_state_variation.pdf`
+        - `./plots/fig_state_variation.png`
+        - `./plots/grobs/presentation_fig6.RDS`
+- **Paper Figure 4**: `./code/04d_plot_figure4_aapc_statebins.R`
+    - Inputs: `./data/public_aapc_results.RDS`
+    - Outputs: 
+        - `./plots/fig_aapc_of_states.pdf`
+        - `./plots/fig_aapc_of_states.png`
+- **Paper Figures 5-8**: `./code/04e_plot_figures5to9_joinpoint_results.R`
+    - Inputs: `./data/joinpoint_results_dupe_rows_2016.RDS`
+    - Outputs: 
+        - `./plots/fig_jp_results_geofacet_*.pdf` (4 files)
+        - `./plots/fig_jp_results_geofacet_*.png` (4 files)
+- **Paper Figure 9-10**: `./code/04f_plot_figure9_apc_statebins.R`
+    - Inputs: `./data/joinpoint_results_dupe_rows_2016.RDS`
+    - Outputs: 
+        - `./plots/fig_current_trajectory.pdf`
+        - `./plots/fig_current_trajectory_barchart.pdf`
+        - `./plots/fig_current_trajectory.png`
+        - `./plots/fig_current_trajectory_barchart.png`
+- **Paper Figure 11-12**: `./code/04g_plot_figure11_rates_statebins.R`
+    - Inputs: `./data/joinpoint_results_dupe_rows_2016.RDS`
+    - Outputs: 
+        - `./plots/fig_current_rates.pdf`
+        - `./plots/fig_current_rates_barchart.pdf`
+        - `./plots/fig_current_rates.png`
+        - `./plots/fig_current_rates_barchart.png`
+- **Paper Figure 13**: `./code/04h_plot_figure13_bivariateplot.R`
+    - Inputs: `./data/joinpoint_results_dupe_rows_2016.RDS`
+    - Outputs: 
+        - `./plots/fig_hotspots.pdf`
+        - `./plots/fig_hotspots_legend.pdf`
+        - `./plots/fig_hotspots_combined.pdf`
+        - `./plots/fig_hotspots.png`
+        - `./plots/fig_hotspots_legend.png`
+        - `./plots/fig_hotspots_combined.png`
 
+### Extras:
+- **State-specific joinpoint results**: `./code/99a_plot_state_specific_jp_results.R`: Creates a plot for each state along with the location and confidence interval of the joinpoint(s).
 
 # Session Information
 
