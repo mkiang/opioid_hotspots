@@ -43,9 +43,6 @@ library(viridis)
 library(gridExtra)
 ```
 
-
-# Overview of the opioid epidemic
-
 ## Almost 30x increase since 1980
 
 ```{r, cache=TRUE}
@@ -58,6 +55,8 @@ print(f1)
 f1a <- readRDS(here("plots", "grobs", "presentation_fig1a.RDS"))
 print(f1a)
 ```
+
+# Variation in the opioid epidemic
 
 ## Variation by opioid type
 
@@ -130,12 +129,11 @@ grid.arrange(p1, p_legend,  heights = c(4, 1.5), nrow=2)
 
 - No decreases in opioid mortality over whole time period
 - Where there were increases, it is just as bad (or worse) for the black population
-- Increases are driven by heroin and synthetic opioids in several states
+- Increases are driven by heroin and synthetic opioids in eastern states
     - Heroin deaths increased 30-34\% per year for both populations
     - Synthetic opioids increased 70\% per year for whites and 150\% for blacks
 - Synthetic opioids are doubling in 12 states for whites and 18 for blacks
 - Strong geographical clustering of epidemic hotspots
-    - Especially for heroin and synthetic opioid mortality
 
 ## Conclusions
 
