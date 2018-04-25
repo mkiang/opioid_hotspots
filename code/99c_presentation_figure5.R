@@ -85,4 +85,4 @@ p1 <- ggplot() +
                legend.position = "none")
 
 ## Save
-saveRDS(f1, "./plots/grobs/presentation_fig5.RDS")
+saveRDS(p1, "./plots/grobs/presentation_fig5.RDS")

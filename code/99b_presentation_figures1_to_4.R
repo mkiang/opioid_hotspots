@@ -18,7 +18,8 @@ c_pal <- RColorBrewer::brewer.pal(3, "Set1")
 df1 <- age_std %>% 
   filter(race == "total", 
          opioid_type == "opioid") %>% 
-  mutate(lab = sprintf("All opioids: %.2f", std_rate))
+  mutate(lab = sprintf("All opioids: %.2f", std_rate), 
+         lab2 = "Over 42,000\ndeaths")
 
 f1 <- ggplot(df1, aes(x = year, y = std_rate)) + 
   geom_line(data = df1 %>% filter(year <= 1998), size = 1) + 
@@ -36,6 +37,20 @@ f1 <- ggplot(df1, aes(x = year, y = std_rate)) +
                   aes(label = lab), 
                   nudge_y = 1, alpha = .75) + 
   mk_nytimes()
+
+f1a <- ggplot(df1, aes(x = year, y = std_rate)) + 
+    geom_line(data = df1 %>% filter(year <= 1998), size = 1) + 
+    geom_line(data = df1 %>% filter(year > 1998), size = 1) + 
+    geom_point(size = 2.5, color = "white") + 
+    geom_point() +
+    scale_x_continuous(NULL, expand = c(0, .75)) + 
+    scale_y_continuous("Age-adjusted mortality rate (per 100,000)", 
+                       expand = c(0, .1), 
+                       limits = c(0, NA)) + 
+    geom_text_repel(data = df1 %>% filter(year %in% c(2016)), 
+                    aes(label = lab2), 
+                    nudge_x = -5, alpha = .75) + 
+    mk_nytimes()
 
 ## Add natural to the plot
 df2 <- age_std %>% 
@@ -148,7 +163,8 @@ f5 <- ggplot(df1, aes(x = year, y = std_rate)) +
   
   mk_nytimes()
 
-saveRDS(f1, "./plots/grobs/presentation_fig1.RDS")
-saveRDS(f2, "./plots/grobs/presentation_fig2.RDS")
-saveRDS(f4, "./plots/grobs/presentation_fig3.RDS")
-saveRDS(f5, "./plots/grobs/presentation_fig4.RDS")
+saveRDS(f1,  "./plots/grobs/presentation_fig1.RDS")
+saveRDS(f1a, "./plots/grobs/presentation_fig1a.RDS")
+saveRDS(f2,  "./plots/grobs/presentation_fig2.RDS")
+saveRDS(f4,  "./plots/grobs/presentation_fig3.RDS")
+saveRDS(f5,  "./plots/grobs/presentation_fig4.RDS")

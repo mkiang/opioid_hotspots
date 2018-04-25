@@ -17,7 +17,8 @@ est_df <- readRDS(sprintf("%s/joinpoint_results_dupe_rows_2016.RDS",
 
 final_rates <- est_df %>% 
     group_by(abbrev, race, opioid_type) %>% 
-    filter(year == max(year)) %>% 
+    filter(year == max(year), 
+           opioid_type != "opioid") %>% 
     mutate(rate_cat = cut(rate, 
                           breaks = c(0, 2.5, 5, 7.5, 10, 15, 20, 25, Inf), 
                           include.lowest = TRUE, 
@@ -40,7 +41,7 @@ p1 <- ggplot(final_rates,
     coord_equal() +
     scale_x_continuous(expand = c(0, 0)) + 
     scale_y_continuous(expand = c(0, 0)) + 
-    facet_grid(opioid_cat ~ race_cat) +
+    facet_grid(race_cat ~ opioid_cat) +
     mk_nytimes(legend.position = "bottom", 
                panel.grid.major = element_blank(), 
                axis.text = element_blank(), 
@@ -85,12 +86,5 @@ p2 <- ggplot(final_rates %>%
                    label.hjust = .5
                ))
 
-ggsave(sprintf('%s/fig_current_rates.pdf', plot_folder), 
-       p1, width = 6, height = 8, scale = 1.25, device = cairo_pdf)
-ggsave(sprintf('%s/fig_current_rates.png', plot_folder), 
-       p1, width = 6, height = 8, scale = 1.25, dpi = 300)
-
-ggsave(sprintf('%s/fig_current_rates_barchart.pdf', plot_folder), 
-       p2, width = 7, height = 4, scale = 1.25, device = cairo_pdf)
-ggsave(sprintf('%s/fig_current_rates_barchart.png', plot_folder), 
-       p2, width = 7, height = 4, scale = 1.25, dpi = 300)
+saveRDS(p1, './plots/grobs/current_rates_map.RDS')
+saveRDS(p2, './plots/grobs/current_rates_barchart.RDS')

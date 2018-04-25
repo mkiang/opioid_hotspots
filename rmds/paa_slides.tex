@@ -105,76 +105,54 @@ Berkeley \and \inst{3}Heinz College \newline Carnegie Mellon University}
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}{Introduction}
+\section{Overview of the opioid
+epidemic}\label{overview-of-the-opioid-epidemic}
 
-\begin{itemize}[<+->]
-\tightlist
-\item
-  Opioid-related mortality is a massive public health issue
-
-  \begin{itemize}[<+->]
-  \tightlist
-  \item
-    Over 42,000 opioid-related deaths in 2016
-  \item
-    More than deaths due to motor vehicle accidents
-  \item
-    More than deaths due to firearms
-  \end{itemize}
-\item
-  More alarming than the magnitude is the trajectory:
-
-  \begin{itemize}[<+->]
-  \tightlist
-  \item
-    Current rate of increase similar to peak of HIV epidemic
-  \item
-    ``Triple-wave'' epidemic\footnote<.->{For examples, see: Unick
-      \emph{et al.} 2013; Compton \emph{et al.} 2016; Ciccarone 2017}
-
-    \begin{itemize}[<+->]
-    \tightlist
-    \item
-      Not one, but multiple, overlapping epidemics
-    \item
-      Variation by type of opioid
-    \end{itemize}
-  \end{itemize}
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{Increased over 2,500\% since 1980}
+\begin{frame}{Almost 30x increase since 1980}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-1-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Wave 1: Prescription Opioids, 1990--2010}
+\begin{frame}{More than deaths by car accidents or guns}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-2-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Wave 2: Heroin, 2010--current}
+\begin{frame}{Wave 1: Prescription Opioids, 1990--2010}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-3-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Wave 3: Synthetic Opioids, 2013--current}
+\begin{frame}{Wave 2: Heroin, 2010--current}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-4-1.pdf}
 
 \end{frame}
 
+\begin{frame}{Wave 3: Synthetic Opioids, 2013--current}
+
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-5-1.pdf}
+
+\end{frame}
+
+\section{Other sources of variation}\label{other-sources-of-variation}
+
 \begin{frame}{Substantial variation: By race/ethnicity}
+
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-6-1.pdf}
 
 \end{frame}
 
 \begin{frame}{Substantial variation: By geography}
 
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-7-1.pdf}
+
 \end{frame}
+
+\section{Our paper}\label{our-paper}
 
 \begin{frame}{Aims of the paper}
 
@@ -182,13 +160,20 @@ Berkeley \and \inst{3}Heinz College \newline Carnegie Mellon University}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Systematically describe the opioid epidemic from 1999 to 2016 by
-  state, race/ethnicity, and opioid type.
+  Systematically describe the opioid epidemic across geography (state),
+  race/ethnicity, and opioid type.
+
+  \begin{itemize}[<+->]
+  \tightlist
+  \item
+    The epidemic over time (1999--2016)
+  \item
+    The \emph{current} epidemic in terms of both mortality rate and rate
+    of increase
+  \end{itemize}
 \item
-  Systematically describe the \emph{current} epidemic.
-\item
-  Identify ``epidemic hotspots'' --- areas with both high mortality
-  rates and rapid increases in mortality.
+  Identify ``epidemic hotspots'' --- areas with high mortality and rapid
+  increases
 \end{enumerate}
 
 \end{frame}
@@ -198,25 +183,8 @@ Berkeley \and \inst{3}Heinz College \newline Carnegie Mellon University}
 \begin{itemize}[<+->]
 \tightlist
 \item
-  Multiple cause of death data from NCHS
-
-  \begin{itemize}[<+->]
-  \tightlist
-  \item
-    1999--2015, restricted-access
-  \item
-    2016, public-access (pending request to restricted file)
-  \end{itemize}
-\item
-  Age-standardized rates by state, race/ethnicity, and opioid type
-
-  \begin{itemize}[<+->]
-  \tightlist
-  \item
-    Underlying cause: X40--X44, X60--X64, X85, Y10--Y14
-  \item
-    Contributory cause: T40.0--T40.4 and T40.6
-  \end{itemize}
+  Multiple cause of death data from NCHS to calculate age-standardized
+  rates by state, race/ethnicity, and opioid type
 \item
   Joinpoint regression (stratified by race/ethnicity, state, opioid
   type)
@@ -224,11 +192,11 @@ Berkeley \and \inst{3}Heinz College \newline Carnegie Mellon University}
   \begin{itemize}[<+->]
   \tightlist
   \item
-    Segmented weighted least squares regression
+    Log-normal segmented weighted least squares regression
   \item
-    Grid-search to find optimal joinpoint locations
+    Grid-search to find optimal joinpoint locations (0-3)
   \item
-    Permutation test to find optimal joinpoint model (0-3 joins)
+    Permutation test to find optimal joinpoint model
   \end{itemize}
 \item
   Defined statistical significance as \(P < 0.01\)
@@ -236,23 +204,29 @@ Berkeley \and \inst{3}Heinz College \newline Carnegie Mellon University}
 
 \end{frame}
 
+\section{Results: Current epidemic}\label{results-current-epidemic}
+
 \begin{frame}{Example Joinpoint Results: Maryland}
 
-\end{frame}
-
-\begin{frame}{Example Joinpoint Results: All opioids}
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-8-1.pdf}
 
 \end{frame}
 
 \begin{frame}{Current Mortality}
 
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-9-1.pdf}
+
 \end{frame}
 
 \begin{frame}{Current Trajectory}
 
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-10-1.pdf}
+
 \end{frame}
 
 \begin{frame}{Epidemic Hotspots}
+
+\begin{center}\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-11-1} \end{center}
 
 \end{frame}
 
@@ -261,8 +235,7 @@ Berkeley \and \inst{3}Heinz College \newline Carnegie Mellon University}
 \begin{itemize}[<+->]
 \tightlist
 \item
-  There were no decreases in opioid mortality, by type, for either
-  race/ethnicity, anywhere
+  No decreases in opioid mortality
 \item
   Where there were increases, it is just as bad (or worse) for the black
   population
@@ -348,6 +321,14 @@ Berkeley \and \inst{3}Heinz College \newline Carnegie Mellon University}
 \end{frame}
 
 \begin{frame}{Epidemic Hotspots}
+
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-12-1.pdf}
+
+\end{frame}
+
+\begin{frame}{Average Annual Percent Change}
+
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-13-1.pdf}
 
 \end{frame}
 

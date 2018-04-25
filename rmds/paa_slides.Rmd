@@ -44,27 +44,19 @@ library(gridExtra)
 ```
 
 
-## Introduction
+# Overview of the opioid epidemic
 
-- Opioid-related mortality is a massive public health issue
-    - Over 42,000 opioid-related deaths in 2016
-    - More than deaths due to motor vehicle accidents
-    - More than deaths due to firearms
-    
-- More alarming than the magnitude is the trajectory:
-    - Current rate of increase similar to peak of HIV epidemic
-    - "Triple-wave" epidemic[^1]
-        - Not one, but multiple, overlapping epidemics
-        - Variation by type of opioid
-
-
-[^1]: For examples, see: Unick *et al.* 2013; Compton *et al.* 2016; Ciccarone 2017
-
-## Increased over 2,500% since 1980
+## Almost 30x increase since 1980
 
 ```{r, cache=TRUE}
 f1 <- readRDS(here("plots", "grobs", "presentation_fig1.RDS"))
 print(f1)
+```
+
+## More than deaths by car accidents or guns
+```{r, cache=TRUE}
+f1a <- readRDS(here("plots", "grobs", "presentation_fig1a.RDS"))
+print(f1a)
 ```
 
 ## Wave 1: Prescription Opioids, 1990--2010
@@ -88,83 +80,78 @@ f4 <- readRDS(here("plots", "grobs", "presentation_fig4.RDS"))
 print(f4)
 ```
 
+# Other sources of variation
+
 ## Substantial variation: By race/ethnicity
 ```{r, cache=TRUE}
-# f5 <- readRDS(here("plots", "grobs", "presentation_fig5.RDS"))
-# print(f5)
+f5 <- readRDS(here("plots", "grobs", "presentation_fig5.RDS"))
+print(f5)
 ```
 
 ## Substantial variation: By geography
 ```{r, cache=TRUE}
-# f6 <- readRDS(here("plots", "grobs", "presentation_fig6.RDS"))
-# print(f6)
+f6 <- readRDS(here("plots", "grobs", "presentation_fig6.RDS"))
+print(f6)
 ```
+
+# Our paper
 
 ## Aims of the paper
 
-1. Systematically describe the opioid epidemic from 1999 to 2016 by state, race/ethnicity, and opioid type.
-1. Systematically describe the *current* epidemic.
-1. Identify "epidemic hotspots" --- areas with both high mortality rates and rapid increases in mortality.
+1. Systematically describe the opioid epidemic across geography (state), race/ethnicity, and opioid type.
+    - The epidemic over time (1999--2016)
+    - The *current* epidemic in terms of both mortality rate and rate of increase
+2. Identify "epidemic hotspots" --- areas with high mortality and rapid increases
 
 ## Methods
 
-- Multiple cause of death data from NCHS
-    - 1999--2015, restricted-access
-    - 2016, public-access (pending request to restricted file)
-- Age-standardized rates by state, race/ethnicity, and opioid type
-    - Underlying cause: X40--X44, X60--X64, X85, Y10--Y14
-    - Contributory cause: T40.0--T40.4 and T40.6
+- Multiple cause of death data from NCHS to calculate age-standardized rates by state, race/ethnicity, and opioid type
 - Joinpoint regression (stratified by race/ethnicity, state, opioid type)
-    - Segmented weighted least squares regression
-    - Grid-search to find optimal joinpoint locations
-    - Permutation test to find optimal joinpoint model (0-3 joins)
+    - Log-normal segmented weighted least squares regression
+    - Grid-search to find optimal joinpoint locations (0-3)
+    - Permutation test to find optimal joinpoint model
 - Defined statistical significance as $P < 0.01$
+
+# Results: Current epidemic
 
 ## Example Joinpoint Results: Maryland
 ```{r, cache=TRUE}
-# f7 <- readRDS('./plots/grobs/fig_example_jp_MD.RDS')
-# print(f7)
-```
-
-## Example Joinpoint Results: All opioids
-```{r, cache=TRUE, fig.height=6, fig.width=10}
-# f8 <- readRDS('./plots/grobs/fig_jp_results_geofacet_opioid.RDS')
-# f8 <- f8 + theme(legend.position = 'none')
-# print(f8)
+f7 <- readRDS(here("plots", "grobs", "fig_example_jp_MD.RDS"))
+print(f7)
 ```
 
 ## Current Mortality
 ```{r, cache=TRUE, fig.height=6.5, fig.width=11}
-# f9 <- readRDS('./plots/grobs/current_rates_map.RDS')
-# print(f9)
+f9 <- readRDS(here("plots", "grobs", "current_rates_map.RDS"))
+print(f9)
 ```
 
 ## Current Trajectory
 ```{r, cache=TRUE, fig.height=6.5, fig.width=11}
-# f10 <- readRDS('./plots/grobs/current_trajectory_map.RDS')
-# print(f10)
+f10 <- readRDS(here("plots", "grobs", "current_trajectory_map.RDS"))
+print(f10)
 ```
 
-
 ## Epidemic Hotspots
-```{r, cache=TRUE, fig.height=7.5, fig.width=11, fig.align='center'}
-# p_legend <- readRDS('./plots/grobs/hotspots_legend.RDS')
-# p1 <- readRDS('./plots/grobs/hotspots_map.RDS')
-# 
-# grid.arrange(p1, p_legend,  heights = c(4, 1.5), nrow=2)
+```{r, cache=TRUE, fig.height=8, fig.width=11, fig.align='center'}
+p_legend <- readRDS(here('plots', 'grobs', 'hotspots_legend.RDS'))
+p1 <- readRDS(here('plots', 'grobs', 'hotspots_map.RDS'))
+
+grid.arrange(p1, p_legend,  heights = c(4, 1.5), nrow=2)
 ```
 
 ## Results
 
-- There were no decreases in opioid mortality, by type, for either race/ethnicity, anywhere
+- No decreases in opioid mortality
 - Where there were increases, it is just as bad (or worse) for the black population
 - Increases are driven by heroin and synthetic opioids
-    - Heroin APC: 30-34\% for both populations
-    - Synthetic opioid APC: 70\% for whites, 150\% for blacks
+    - Heroin deaths increased 30-34\% per year for both populations
+    - Synthetic opioids increased 70\% per year for whites and 150\% for blacks
     - Synthetic opioids are doubling in 12 states for whites and 18 for blacks
-- Strong geographical clustering in heroin and synthetic opioid mortality
-    - Little evidence this is due to differences in opioid use
-    - Source of heroin/synthetic opioids is important
+- Strong geographical clustering of epidemic hotspots
+    - Especially for heroin and synthetic opioid mortality
+    - Little evidence this is due to differences in heroin/opioid use
+    - Lots of evidence that source of heroin/synthetic opioids is important
 
 ## Conclusions
 
@@ -189,10 +176,14 @@ print(f4)
 
 \end{center}
 
-
 ## Epidemic Hotspots
 ```{r, cache=TRUE, fig.height=5, fig.width=8}
-# f14 <- readRDS('./plots/grobs/hotspots_scatter_final.RDS')
-# print(f14)
+f14 <- readRDS(here('plots', 'grobs', 'hotspots_scatter_final.RDS'))
+print(f14)
 ```
 
+## Average Annual Percent Change
+```{r, cache=TRUE, fig.height=6.5, fig.width=11}
+f15 <- readRDS(here('plots', 'grobs', 'aapc_map.RDS'))
+print(f15)
+```
