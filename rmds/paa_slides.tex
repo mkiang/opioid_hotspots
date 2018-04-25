@@ -120,39 +120,23 @@ epidemic}\label{overview-of-the-opioid-epidemic}
 
 \end{frame}
 
-\begin{frame}{Wave 1: Prescription Opioids, 1990--2010}
+\begin{frame}{Variation by opioid type}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-3-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Wave 2: Heroin, 2010--current}
+\begin{frame}{Variation by race/ethnicity}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-4-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Wave 3: Synthetic Opioids, 2013--current}
+\begin{frame}{Variation by state}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-5-1.pdf}
 
 \end{frame}
-
-\section{Other sources of variation}\label{other-sources-of-variation}
-
-\begin{frame}{Substantial variation: By race/ethnicity}
-
-\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-6-1.pdf}
-
-\end{frame}
-
-\begin{frame}{Substantial variation: By geography}
-
-\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-7-1.pdf}
-
-\end{frame}
-
-\section{Our paper}\label{our-paper}
 
 \begin{frame}{Aims of the paper}
 
@@ -178,55 +162,51 @@ epidemic}\label{overview-of-the-opioid-epidemic}
 
 \end{frame}
 
-\begin{frame}{Methods}
+\begin{frame}{Data / Methods}
 
-\begin{itemize}[<+->]
+\begin{enumerate}[<+->]
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Multiple cause of death data from NCHS to calculate age-standardized
-  rates by state, race/ethnicity, and opioid type
+  Multiple cause of death data from NCHS
 \item
-  Joinpoint regression (stratified by race/ethnicity, state, opioid
-  type)
-
-  \begin{itemize}[<+->]
-  \tightlist
-  \item
-    Log-normal segmented weighted least squares regression
-  \item
-    Grid-search to find optimal joinpoint locations (0-3)
-  \item
-    Permutation test to find optimal joinpoint model
-  \end{itemize}
+  Calculate age-standardized rates by state, race/ethnicity, and opioid
+  type
 \item
-  Defined statistical significance as \(P < 0.01\)
-\end{itemize}
+  Joinpoint regression
+\end{enumerate}
 
 \end{frame}
 
-\section{Results: Current epidemic}\label{results-current-epidemic}
+\begin{frame}{Example Results: Maryland}
 
-\begin{frame}{Example Joinpoint Results: Maryland}
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-6-1.pdf}
+
+\end{frame}
+
+\begin{frame}{Example Results: Synthetic Opioids}
+
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-7-1.pdf}
+
+\end{frame}
+
+\section{Results: Current Epidemic}\label{results-current-epidemic}
+
+\begin{frame}{Current Mortality}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-8-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Current Mortality}
+\begin{frame}{Current Trajectory}
 
 \includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-9-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Current Trajectory}
-
-\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-10-1.pdf}
-
-\end{frame}
-
 \begin{frame}{Epidemic Hotspots}
 
-\begin{center}\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-11-1} \end{center}
+\begin{center}\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-10-1} \end{center}
 
 \end{frame}
 
@@ -235,33 +215,31 @@ epidemic}\label{overview-of-the-opioid-epidemic}
 \begin{itemize}[<+->]
 \tightlist
 \item
-  No decreases in opioid mortality
+  No decreases in opioid mortality over whole time period
 \item
   Where there were increases, it is just as bad (or worse) for the black
   population
 \item
-  Increases are driven by heroin and synthetic opioids
+  Increases are driven by heroin and synthetic opioids in several states
 
   \begin{itemize}[<+->]
   \tightlist
   \item
-    Heroin APC: 30-34\% for both populations
+    Heroin deaths increased 30-34\% per year for both populations
   \item
-    Synthetic opioid APC: 70\% for whites, 150\% for blacks
-  \item
-    Synthetic opioids are doubling in 12 states for whites and 18 for
+    Synthetic opioids increased 70\% per year for whites and 150\% for
     blacks
   \end{itemize}
 \item
-  Strong geographical clustering in heroin and synthetic opioid
-  mortality
+  Synthetic opioids are doubling in 12 states for whites and 18 for
+  blacks
+\item
+  Strong geographical clustering of epidemic hotspots
 
   \begin{itemize}[<+->]
   \tightlist
   \item
-    Little evidence this is due to differences in opioid use
-  \item
-    Source of heroin/synthetic opioids is important
+    Especially for heroin and synthetic opioid mortality
   \end{itemize}
 \end{itemize}
 
@@ -322,13 +300,13 @@ epidemic}\label{overview-of-the-opioid-epidemic}
 
 \begin{frame}{Epidemic Hotspots}
 
-\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-12-1.pdf}
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-11-1.pdf}
 
 \end{frame}
 
 \begin{frame}{Average Annual Percent Change}
 
-\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-13-1.pdf}
+\includegraphics{paa_slides_files/figure-beamer/unnamed-chunk-12-1.pdf}
 
 \end{frame}
 

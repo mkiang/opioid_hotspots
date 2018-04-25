@@ -57,7 +57,7 @@ df2 <- age_std %>%
   filter(race == "total", 
          opioid_type == "natural", 
          year > 1998) %>% 
-  mutate(lab = sprintf("Prescription: %.2f", std_rate))
+  mutate(lab = sprintf("Natural: %.2f", std_rate))
 
 f2 <- ggplot(df1, aes(x = year, y = std_rate)) + 
   geom_line(data = df1 %>% filter(year <= 1998), alpha = .4) + 
@@ -90,7 +90,7 @@ f4 <- ggplot(df1, aes(x = year, y = std_rate)) +
   geom_line(data = df1 %>% filter(year <= 1998), alpha = .4) + 
   geom_line(data = df1 %>% filter(year > 1998), alpha = .4) + 
   geom_point(alpha = .4) +
-  scale_x_continuous(NULL, expand = c(0, .75)) + 
+  scale_x_continuous(NULL, expand = c(0, .85)) + 
   scale_y_continuous("Age-adjusted mortality rate (per 100,000)", 
                      expand = c(0, .05), 
                      limits = c(0, NA)) + 
@@ -168,3 +168,53 @@ saveRDS(f1a, "./plots/grobs/presentation_fig1a.RDS")
 saveRDS(f2,  "./plots/grobs/presentation_fig2.RDS")
 saveRDS(f4,  "./plots/grobs/presentation_fig3.RDS")
 saveRDS(f5,  "./plots/grobs/presentation_fig4.RDS")
+
+
+f6 <- ggplot(df1, aes(x = year, y = std_rate)) + 
+    geom_line(data = df1 %>% filter(year <= 1998), alpha = .4) + 
+    geom_line(data = df1 %>% filter(year > 1998), alpha = .4) + 
+    geom_point(alpha = .4) +
+    scale_x_continuous(NULL, expand = c(0, .75)) + 
+    scale_y_continuous("Age-adjusted mortality rate (per 100,000)", 
+                       expand = c(0, .05), 
+                       limits = c(0, NA)) + 
+    
+    ## Adding prescription line
+    geom_line(data = df2, aes(x = year, y = std_rate), 
+              color = c_pal[1], size = 1) + 
+    geom_text_repel(data = df2 %>% filter(year == 2016), 
+                    aes(x = year, y = std_rate, label = lab), 
+                    color = c_pal[1], nudge_x = -6.5, alpha = .75) + 
+    geom_point(data = df2, aes(x = year, y = std_rate), 
+               size = 2.5, color = "white") + 
+    geom_point(data = df2, aes(x = year, y = std_rate), 
+               color = c_pal[1]) + 
+    
+    ## Adding heroin
+    geom_line(data = df4 %>% filter(year > 1998), 
+              aes(x = year, y = std_rate), 
+              color = c_pal[2], alpha = 1, size = 1) + 
+    geom_line(data = df4 %>% filter(year < 1999), 
+              aes(x = year, y = std_rate, size = 1), 
+              color = c_pal[2], alpha = 1, size = 1) + 
+    geom_point(data = df4, aes(x = year, y = std_rate), 
+               color = "white", alpha = 1, size = 2.5) + 
+    geom_point(data = df4, aes(x = year, y = std_rate), 
+               color = c_pal[2], alpha = 1) + 
+    geom_text_repel(data = df4 %>% filter(year == 2016), 
+                    aes(label = lab), nudge_x = -5.5, 
+                    color = c_pal[2], alpha = .75) + 
+    
+    ## Adding synth
+    geom_line(data = df5, aes(x = year, y = std_rate), 
+              color = c_pal[3], alpha = 1, size = 1) + 
+    geom_point(data = df5, aes(x = year, y = std_rate), 
+               color = "white", size = 2.5, alpha = 1) + 
+    geom_point(data = df5, aes(x = year, y = std_rate), 
+               color = c_pal[3], alpha = 1) + 
+    geom_text_repel(data = df5 %>% filter(year == 2016), 
+                    aes(x = year, y = std_rate, label = lab), 
+                    color = c_pal[3]) + 
+    
+    mk_nytimes()
+saveRDS(f6,  "./plots/grobs/presentation_fig2_to_4.RDS")
