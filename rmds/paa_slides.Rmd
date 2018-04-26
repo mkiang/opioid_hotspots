@@ -7,7 +7,7 @@ author:
   - "Zhe Zhang\\inst{3}"
   - "Jarvis Chen\\inst{1}"
 institute:
-  - "\\inst{1}Deptartment of Social and Behavioral Sciences \\newline  Harvard TH Chan School of Public Health"
+  - "\\inst{1}Department of Social and Behavioral Sciences \\newline  Harvard TH Chan School of Public Health"
   - "\\inst{2}Department of Demography \\newline University of California, Berkeley"
   - "\\inst{3}Heinz College \\newline Carnegie Mellon University"
 # date: "`r format(Sys.time(), '%d %B %Y')`"
