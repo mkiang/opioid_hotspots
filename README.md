@@ -14,6 +14,11 @@ Code for our paper and talk ["Geographic Variation in Opioid Mortality by Race/E
 
 > Geographic Variation in Opioid Mortality by Race/Ethnicity in the United States, 1999-2016: Identifying epidemic hotspots. Kiang MV, Alexander MJ, Zhang Z, and Chen JT. Presented at PAA 2018: Denver, CO. April, 2018.
 
+If you'd like a copy of the PAA 2018 slides, [they are in the `rmds` folder](https://github.com/mkiang/opioid_hotspots/blob/master/rmds/paa_slides.pdf).
+
+About reproducibility
+---------------------
+
 Due to limitations on sharing the restricted-access data, this pipeline is not fully reproducible. When possible, we provide raw data as well as model estimates. In the cases where observations have fewer than 10 deaths, we suppress the rate (as well as the model MSE and SSE), in accordance with the NCHS data use agreement.
 
 Interactive results explorer
