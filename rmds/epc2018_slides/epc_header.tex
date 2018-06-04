@@ -1,0 +1,19 @@
+\usepackage{fontawesome}
+\makeatletter
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    % \usebeamerfont{title in head/foot}\insertshorttitle
+    % \usebeamerfont{title in head/foot}{Kiang (\faTwitter @mathewkiang), Alexander (\faTwitter @monjalexander), Zhang, Chen}
+    \usebeamerfont{title in head/foot}{Kiang, Alexander, Zhang, \& Chen}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot} Opioid Epidemic Hotspots (\texttt{tiny.cc/epc2018}) \hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
