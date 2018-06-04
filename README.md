@@ -10,11 +10,13 @@
 Introduction
 ============
 
-Code for our paper and talk ["Geographic Variation in Opioid Mortality by Race/Ethnicity in the United States, 1999-2016: Identifying epidemic hotspots"](https://paa.confex.com/paa/2018/webprogrampreliminary/Paper22264.html), presented at Population Association of America (PAA) Annual Meeting 2018 in Denver, CO. This paper uses [multiple cause of death data](https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm) to examine geographical and racial/ethnic variation in opioid mortality, by opioid type, over time. The full citation is:
+Code for our paper and talk "Geographic Variation in Opioid Mortality by Race/Ethnicity in the United States, 1999-2016: Identifying epidemic hotspots". This paper was presented at Population Association of America ([PAA](https://paa.confex.com/paa/2018/webprogrampreliminary/Paper22264.html)) Annual Meeting 2018 in Denver, CO by Matt, and European Population Conference ([EPC](https://eaps.confex.com/eaps/2018/meetingapp.cgi/Paper/2208)) 2018 in Brussels, Belgium by Monica. We used [multiple cause of death data](https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm) to examine geographical and racial/ethnic variation in opioid mortality, by opioid type, over time. It's an extension of our [previous work](https://github.com/mkiang/opioid_trends) published ahead-of-print in [*Epidemiology*](https://journals.lww.com/epidem/Abstract/publishahead/Trends_in_Black_and_White_Opioid_Mortality_in_the.98701.aspx) in May 2018.
+
+The full citation is:
 
 > Geographic Variation in Opioid Mortality by Race/Ethnicity in the United States, 1999-2016: Identifying epidemic hotspots. Kiang MV, Alexander MJ, Zhang Z, and Chen JT. Presented at PAA 2018: Denver, CO. April, 2018.
 
-If you'd like a copy of the PAA 2018 slides, [they are in the `rmds` folder](https://github.com/mkiang/opioid_hotspots/blob/master/rmds/paa_slides.pdf).
+If you'd like a copy of the slides, [they are in the `rmds` folder](https://github.com/mkiang/opioid_hotspots/blob/master/rmds/).
 
 About reproducibility
 ---------------------
@@ -75,9 +77,23 @@ All analyses are conducted using [`R`](https://cran.r-project.org/), and the NCI
 
 To run this code, you'll need the following `R` packages from CRAN:
 
-For data manipulation: - `tidyverse` - `doParallel` - `foreach` - `knitr` - `config` - `rmarkdown` - `yaml` - `digest`
+For data manipulation:
 
-For plotting: - `ggrepel` - `gridExtra` - `cowplot` - `viridis`
+-   `tidyverse`
+-   `doParallel`
+-   `foreach`
+-   `knitr`
+-   `config`
+-   `rmarkdown`
+-   `yaml`
+-   `digest`
+
+For plotting:
+
+-   `ggrepel`
+-   `gridExtra`
+-   `cowplot`
+-   `viridis`
 
 In addition, you'll need these packages which should be installed via Github and not CRAN:
 
