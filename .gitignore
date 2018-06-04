@@ -7,7 +7,8 @@ data_private/
 data_restricted
 joinpoint_analyses/
 results_explorer/cached_images/
-rmds/paa_slides_cache/beamer/
-rmds/paa_slides_files/
-rmds/epc_slides_files/
-rmds/epc_slides_cache/beamer/
+rmds/paa2018_slides/paa_slides_cache/beamer/
+rmds/paa2018_slides/paa_slides_files/
+rmds/epc2018_slides/epc_slides_files/
+rmds/epc2018_slides/epc_slides_cache/beamer/
+
