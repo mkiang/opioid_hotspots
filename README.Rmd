@@ -14,13 +14,17 @@ knitr::include_graphics("./plots/fig_jp_results_geofacet_opioid.png")
 
 # Introduction
 
-Code for our paper and talk "Geographic Variation in Opioid Mortality by Race/Ethnicity in the United States, 1999-2016: Identifying epidemic hotspots". This paper was presented at Population Association of America ([PAA](https://paa.confex.com/paa/2018/webprogrampreliminary/Paper22264.html)) Annual Meeting 2018 in Denver, CO by Matt, and European Population Conference ([EPC](https://eaps.confex.com/eaps/2018/meetingapp.cgi/Paper/2208)) 2018 in Brussels, Belgium by Monica. We used [multiple cause of death data](https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm) to examine geographical and racial/ethnic variation in opioid mortality, by opioid type, over time. It's an extension of our [previous work](https://github.com/mkiang/opioid_trends) published ahead-of-print in [*Epidemiology*](https://journals.lww.com/epidem/Abstract/publishahead/Trends_in_Black_and_White_Opioid_Mortality_in_the.98701.aspx) in May 2018.
+Code for our paper and talks "Geographic Variation in Opioid Mortality by Race/Ethnicity in the United States, 1999-2016: Identifying epidemic hotspots". This paper was presented at Population Association of America ([PAA](https://paa.confex.com/paa/2018/webprogrampreliminary/Paper22264.html)) Annual Meeting 2018 in Denver, CO by Matt, and European Population Conference ([EPC](https://eaps.confex.com/eaps/2018/meetingapp.cgi/Paper/2208)) 2018 in Brussels, Belgium by Monica. 
 
-The full citation is:
+We used [multiple cause of death data](https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm) to examine geographical and racial/ethnic variation in opioid mortality, by opioid type, over time. It's an extension of our [previous work](https://github.com/mkiang/opioid_trends) published ahead-of-print in [*Epidemiology*](https://journals.lww.com/epidem/Abstract/publishahead/Trends_in_Black_and_White_Opioid_Mortality_in_the.98701.aspx) in May 2018.
+
+If you'd like a copy of the slides, [they are in the `rmds` folder](https://github.com/mkiang/opioid_hotspots/blob/master/rmds/).
+
+The full citations:
 
 >  Geographic Variation in Opioid Mortality by Race/Ethnicity in the United States, 1999-2016: Identifying epidemic hotspots. Kiang MV, Alexander MJ, Zhang Z, and Chen JT. Presented at PAA 2018: Denver, CO. April, 2018.
 
-If you'd like a copy of the slides, [they are in the `rmds` folder](https://github.com/mkiang/opioid_hotspots/blob/master/rmds/).
+>  Geographic Variation in Opioid Mortality by Race/Ethnicity in the United States, 1999-2016: Identifying epidemic hotspots. Kiang MV, Alexander MJ, Zhang Z, and Chen JT. Presented at EPC 2018: Brussels, Belgium. June, 2018.
 
 ## About reproducibility 
 
