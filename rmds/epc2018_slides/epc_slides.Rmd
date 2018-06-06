@@ -97,6 +97,10 @@ print(f6)
 
 ## Results
 Results explorer: \texttt{https://tiny.cc/epc2018}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{screenshot.png}
+\end{center}
+
 
 
 ## Example Results: Maryland
