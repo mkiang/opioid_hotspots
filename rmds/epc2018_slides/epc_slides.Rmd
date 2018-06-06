@@ -41,6 +41,7 @@ library(geofacet)
 library(statebins)
 library(viridis)
 library(gridExtra)
+library(ggrepel)
 ```
 
 # Background: the national US opioid epidemic
