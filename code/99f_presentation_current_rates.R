@@ -19,11 +19,6 @@ final_rates <- est_df %>%
     group_by(abbrev, race, opioid_type) %>% 
     filter(year == max(year), 
            opioid_type != "opioid") %>% 
-    mutate(rate_cat = cut(rate, 
-                          breaks = c(0, 2.5, 5, 7.5, 10, 15, 20, 25, Inf), 
-                          include.lowest = TRUE, 
-                          ordered_result = TRUE)
-    ) %>% 
     ungroup()
 
 rate_range <- range(final_rates$rate, na.rm = TRUE)
